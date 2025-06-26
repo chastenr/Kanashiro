@@ -20,7 +20,15 @@ body {
     display: flex;
     text-align: justify;
     font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
- }
+
+}
+@media (max-width: 10008px) {
+    .navname {
+        font-size: 16px; /* Smaller font size for screens less than 768px */
+        font-weight: 20px; /* Set font weight to normal */
+        text-align: center; /* Center the text */
+    }
+}
 .navbar {
     background-color: #ffffff; /* White background for the navbar */
     padding: 10px 20px; /* Add padding to the navbar */
@@ -94,9 +102,10 @@ body {
     position: absolute;
     top: 290px;
     transform:  translateX(-40%);
-  
 
 }
+
+
 body {
     background-color: rgb(233, 233, 233);
     background-image: url("IMAGE/BG.jpg");
