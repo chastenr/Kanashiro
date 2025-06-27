@@ -177,3 +177,10 @@ body {
         font-size: 1.3rem; /* Adjust font size for smaller screens */
     }
   }
+@media (max-width: 600px) {
+    .navside {
+    width: 60px;
+    height: 150px;
+    }
+}
+
