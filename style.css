@@ -22,11 +22,27 @@ body {
     font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
 
 }
-@media (max-width: 10008px) {
+.navname {
+    font-size: 20px; /* Default font size for larger screens */
+    margin: 0;
+    color: black;
+    display: flex;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+}
+
+@media (max-width: 768px) {
     .navname {
         font-size: 16px; /* Smaller font size for screens less than 768px */
-        font-weight: 20px; /* Set font weight to normal */
+        font-weight: 400; /* Set font weight to normal */
         text-align: center; /* Center the text */
+    }
+}
+
+@media (max-width: 480px) {
+    .navname {
+        font-size: 14px; /* Even smaller font size for very small screens */
+        font-weight: 300; /* Lighter font weight */
     }
 }
 .navbar {
@@ -58,7 +74,7 @@ body {
 }
 .name {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
+    font-weight: 500px;
     font-size: 3rem;
     text-transform: uppercase;
     color: black;
@@ -66,7 +82,15 @@ body {
     margin: 0;
     text-align: center;
 }
-
+@media (max-width: 600px) {
+    .name {
+      font-size: 1.3rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  }
 .description {
         font-size: 1.2rem;
         color: black;
@@ -119,3 +143,37 @@ body {
 .margindes {
     line-height: 200%;
 }
+
+.margindes {
+    line-height: 200%;
+    font-size: 1.5rem; /* Default for desktop */
+    color: black;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  /* Tablet and small laptop */
+  @media (max-width: 768px) {
+    .margindes {
+    font-size: 1.2rem;
+    }
+  }
+  
+  /* Mobile phones */
+  @media (max-width: 500px) {
+    .margindes {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .name {
+        font-size: 1.8rem; /* Adjust font size for smaller screens */
+    }
+  }
+
+  @media (max-width: 500px) {
+    .name {
+        font-size: 1.3rem; /* Adjust font size for smaller screens */
+    }
+  }
