@@ -172,7 +172,7 @@ body {
     }
   }
 
-  @media (max-width: 595px) {
+  @media (max-width: 620px) {
     .name {
         font-size: 1.3rem; /* Adjust font size for smaller screens */
     }
