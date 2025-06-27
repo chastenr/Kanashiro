@@ -35,13 +35,20 @@
 }
 
 @media (max-width: 768px) {
-    .navside img{
-        width: 45px;
-        height: 40px;
+    .in{
+        width: 25px;
+        height: 25px;
         margin: 15px;
         display: flex;
         justify-content: center;
-        transform: translate(-20px);
+        transform: translate(-17px);
     }
-    
+    .ig{
+        width: 25px;
+        height: 25px;
+        margin: 15px;
+        display: flex;
+        justify-content: center;
+        transform: translate(-17px);
+    }
 }
