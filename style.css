@@ -1,0 +1,189 @@
+body {
+    background-color: rgb(233, 233, 233); /* Set the background color of the page */
+    color: white; /* Set text color to white */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    opacity: 0.9;
+
+}
+.navimage {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 100px; /* Rounded corners for the image */
+}
+.navname {
+    font-size: 20px;
+    margin: 0;
+    color:black; 
+    display: flex;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+
+}
+.navname {
+    font-size: 20px; /* Default font size for larger screens */
+    margin: 0;
+    color: black;
+    display: flex;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+}
+
+@media (max-width: 768px) {
+    .navname {
+        font-size: 16px; /* Smaller font size for screens less than 768px */
+        font-weight: 400; /* Set font weight to normal */
+        text-align: center; /* Center the text */
+    }
+}
+
+@media (max-width: 480px) {
+    .navname {
+        font-size: 14px; /* Even smaller font size for very small screens */
+        font-weight: 300; /* Lighter font weight */
+    }
+}
+.navbar {
+    background-color: #ffffff; /* White background for the navbar */
+    padding: 10px 20px; /* Add padding to the navbar */
+    min-height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+}
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* pushes navlinks to the right */
+    padding: 10px;
+  }
+  
+
+.navbar-brand {
+    font-size: 1.5rem; /* Adjust font size for responsiveness */
+    font-weight: bold; /* Make the name bold */
+    color: black; /* Ensure the text is visible on a light background */
+}
+
+.navbar-image {
+    max-height: 40px; /* Adjust the height of the image */
+    width: auto;
+    border-radius: 50%; /* Optional: make the image circular */
+}
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .name {
+      font-size: 1.3rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  }
+.description {
+        font-size: 1.2rem;
+        color: black;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        margin: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        
+}
+
+.base {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* centers vertically in the available space */
+    align-items: center;      /* centers horizontally */
+    height: calc(70vh - 60px);
+    text-align: center;
+}
+    
+.navside {
+    width: 100px;
+    height: 300px;
+    background-color: #ececec;
+     border: #cbcbcb;
+     border: 3px solid rgb(209, 209, 209);
+    color: rgb(188, 188, 188);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 290px;
+    transform:  translateX(-40%);
+
+}
+
+
+body {
+    background-color: rgb(233, 233, 233);
+    background-image: url("IMAGE/BG.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    opacity: 0.9;
+    color: white;
+}
+.margindes {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    color: black;
+    line-height: 200%;
+    margin-top: 50px; /* controls how far below the title it appears */
+    text-align: center;
+  }
+  
+  .description {
+    text-align: center;
+  }
+  
+  /* Tablet and small laptop */
+  @media (max-width: 768px) {
+    .margindes {
+    font-size: 1.2rem;
+    }
+  }
+  
+  /* Mobile phones */
+  @media (max-width: 500px) {
+    .margindes {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .name {
+        font-size: 1.8rem; /* Adjust font size for smaller screens */
+    }
+  }
+
+  @media (max-width: 620px) {
+    .name {
+        font-size: 1.3rem; /* Adjust font size for smaller screens */
+    }
+  }
+@media (max-width: 800px) {
+    .navside {
+    width: 60px;
+    height: 150px;
+    }
+}
+

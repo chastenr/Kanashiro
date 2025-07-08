@@ -1,0 +1,79 @@
+.ig { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+    transform: translateX(-55%);
+    position: absolute;
+    top: -0px;
+    
+    
+}
+.in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 55px;
+    width: 55px;
+    transform: translate(-19px);
+    position: absolute;
+    top: 70px;
+    
+}
+.git {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    height: 55px;
+    width: 55px;
+    transform: translate(-19px);
+    position: absolute;
+    top: 135px;
+}
+.ig:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 5px #C13584); /* Instagram pink glow */
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  .in:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 5px #0A66C2); /* LinkedIn blue glow */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+ .git:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 5px #0A66C2);
+    transition: transform 0.3s ease, filter 0.3s ease;
+ }
+
+@media (max-width: 800px) {
+
+      .navside img {
+        height: 30px;
+        width: 30px;
+      }
+    
+      .navside .ig {
+        margin-left: 10px;
+        margin-bottom: 8px;
+        transform: translateX(-14px);
+        top: -15px;
+      }
+    
+      .navside .in {
+        margin-left: 10px;
+        margin-bottom: 8px;
+        transform: translateX(-14px);
+        top: 30px;
+      }
+    
+      .navside .git {
+        margin-left: 10px;
+        margin-bottom: 8px;
+        transform: translateX(-14px);
+        top: 65px;
+      }
+}
