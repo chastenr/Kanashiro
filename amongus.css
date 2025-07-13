@@ -1,0 +1,137 @@
+
+.amonguscontainer {
+  position: relative;
+  top: 50px;
+  left: 240px;
+  transform: scale(0.7);
+  transform-origin: top left;
+  transition: transform 0.5s ease;
+  }
+
+.amonguscontainer:hover {
+  transform: scale(0.8);
+}
+
+  
+  .box {
+    background-color: #8E1818;
+    box-sizing: border-box;
+    width: 200px;
+    height: 280px;
+    padding: 20px;
+    border: 15px solid black;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom: none;
+    overflow: visible;
+    position: relative
+  }
+  .eye {
+    position: absolute;
+    background-color: #367090;
+    box-sizing: border-box;
+    border: 15px solid black;
+    width: 180px;
+    height: 100px;
+    padding: 20px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 40px;
+    z-index: 2;      /* make sure eye is on top */
+  
+  }
+  .shadowbody {
+    background-color: red;
+    width: 160px;
+    height: 250px;
+    margin-top: -20px;
+    margin-left: -10px;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 190px;
+    border-bottom-right-radius: 170px;
+    border-bottom: none;
+    opacity: 0.2;
+    z-index: 1; 
+  }
+  .feetleft {
+    position: absolute;
+    left: -15px;
+    background-color: #8E1818;
+    width: 70px;
+    height: 70px;
+    border-bottom-left-radius: 20px;
+    border: 15px solid black;
+    border-top: none;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 50px;
+    
+  }
+  .feetright {
+    position: absolute;
+    left: 85px;
+    background-color: #8E1818;
+    width: 70px;
+    height: 70px;
+    border: 15px solid black;
+    border-top: none;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 63px;
+  }
+  .eyecolor {
+    position: absolute;
+    left: 60px;
+    top: 35px;
+    background-color: #5dbcef;
+    width: 120px;
+    height: 50px;
+    z-index: 2;
+    overflow: visible;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 90px;
+    border-bottom-left-radius: 120px;
+    border: 2px solid black;
+    border-bottom: none;
+  }
+  .eyewhite {
+    background-color: white;
+    position: absolute;
+    left: 100px;
+    top: 45px;
+    width: 62px;
+    height: 16px;
+    z-index: 2;
+    overflow: visible;
+    border-top-left-radius: 87px;
+    border-top-right-radius: 94px;
+    border-bottom-left-radius: 62px;
+    border-bottom-right-radius: 82px;
+  
+  }
+  .bag {
+    background-color: #8E1818;
+    position: absolute;
+    z-index: 1;
+    top: 90px;
+    left: -57px;
+    width: 30px;
+    height: 120px;
+    overflow: visible;
+    border: 13px solid black;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 66px;
+    border-right: none;
+  }
+  .shadowfoot {
+    background-color: #585858;
+    width: 270px;
+    height: 150px;
+    top: 250px;
+    left: -35px;
+    opacity: 0.5;
+    position: absolute;
+    border-radius: 350px;
+    filter: blur(5px);
+  }
