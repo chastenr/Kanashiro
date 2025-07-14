@@ -58,7 +58,7 @@
       opacity: 0.2;
       z-index: 1; 
     }
-    .feetleft1 {
+    .feetleft3 {
       position: absolute;
       left: -15px;
       background-color: #11093c;
@@ -71,7 +71,7 @@
       border-bottom-right-radius: 50px;
       
     }
-    .feetright1 {
+    .feetright3 {
       position: absolute;
       left: 85px;
       background-color: #11093c;
