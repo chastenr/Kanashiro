@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio Slider</title>
+  <style>
+    body {
+      font-family: Arial;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #f2f2f2;
+    }
+    .slider {
+      width: 80%;
+      max-width: 600px;
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .project-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .project-description {
+      font-size: 16px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      background: #333;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+    <div class="slider">
+        <img id="image" style="width:100%; max-height: 300px; object-fit:cover;" />
+        <div class="project-title" id="title"></div>
+        <div class="project-description" id="desc"></div>
+        <a id="link" href="#" target="_blank">View Project</a>
+        <button onclick="nextProject()">Next Project →</button>
+      </div>
+      
+      <script>
+        const projects = [
+          {
+            title: "Project One",
+            desc: "Landing page built with HTML/CSS",
+            image: "project1.jpg",
+            link: "https://yourproject1.netlify.app"
+          },
+          {
+            title: "Project Two",
+            desc: "React App with API integration",
+            image: "project2.jpg",
+            link: "https://yourproject2.vercel.app"
+          },
+          {
+            title: "Project Three",
+            desc: "WordPress Blog Design",
+            image: "project3.jpg",
+            link: "https://yourproject3.com"
+          }
+        ];
+      
+        let index = 0;
+      
+        function renderProject() {
+          const project = projects[index];
+          document.getElementById("title").innerText = project.title;
+          document.getElementById("desc").innerText = project.desc;
+          document.getElementById("image").src = project.image;
+          document.getElementById("link").href = project.link;
+          document.getElementById("link").innerText = "View Project →";
+        }
+      
+        function nextProject() {
+          index = (index + 1) % projects.length;
+          renderProject();
+        }
+      
+        renderProject();
+      </script>
+      
+</body>
+</html>

@@ -1,10 +1,20 @@
 body {
-    background-color: rgb(233, 233, 233); /* Set the background color of the page */
-    color: white; /* Set text color to white */
+    background-color: rgb(245, 245, 245); /* Set the background color of the page */
+    color: rgb(172, 166, 166); /* Set text color to white */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
     opacity: 0.9;
 
+}
+.brandcontainer {
+  display: flex;
+  align-items: center;
+  gap:
+}
+.description {
+  margin: 20px auto;
+  width: 70%;
+  text-align: center;
 }
 .navimage {
     display: flex;
@@ -15,7 +25,7 @@ body {
 }
 .navname {
     font-size: 20px;
-    margin: 0;
+    margin: ;
     color:black; 
     display: flex;
     text-align: justify;
@@ -46,20 +56,22 @@ body {
     }
 }
 .navbar {
-    background-color: #ffffff; /* White background for the navbar */
+    background-color: #e5e3e3; /* White background for the navbar */
     padding: 10px 20px; /* Add padding to the navbar */
     min-height: 100px;
     width: 100%;
     box-sizing: border-box;
-    margin: 0;
+    margin: 2;
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Align items vertically */
 }
 .container1 {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* pushes navlinks to the right */
-    padding: 10px;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* pushes navlinks to the right */
+    padding: 0 auto;
   }
   
 
