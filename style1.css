@@ -410,16 +410,14 @@ transition: transform 0.3s ease, filter 0.3s ease;
   display: flex;
   height: 950px;
   box-sizing: border-box;
-  align-items: center;
-  text-align: center;
+  margin: 30px;
+  text-align: left;
   flex-direction: column;
 }
 .skillstitle {
-  align-items: center;
-  font-size: 2.5rem;
-  display: flex;
-  font-weight: 600;
+  font-size: 2.0rem;
   color: black;
-  margin-bottom: 20px;
-  text-align: center;
+  display: flex;
+  right: 300px;
+  font-family: 'montserrat', sans-serif;
 }
