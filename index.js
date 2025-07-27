@@ -9,6 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  document.addEventListener("DOMContenetLoaded", function () {
+  document.addEventListener("DOMContentLoaded", function () {
     const button = document.getElementById("contact")
   })

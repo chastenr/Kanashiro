@@ -1,0 +1,21 @@
+.aboutt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.2rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-family: sans-serif;
+}
+
+.borderabout {
+    background: linear-gradient(135deg, #1a1a1a, #111);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+.summarize {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

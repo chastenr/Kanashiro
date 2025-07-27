@@ -9,7 +9,6 @@ body {
 .brandcontainer {
   display: flex;
   align-items: center;
-  gap:
 }
 .description {
   margin: 20px auto;
@@ -25,7 +24,6 @@ body {
 }
 .navname {
     font-size: 20px;
-    margin: ;
     color:black; 
     display: flex;
     text-align: justify;
@@ -122,7 +120,7 @@ body {
     flex-direction: column;
     justify-content: center;  /* centers vertically in the available space */
     align-items: center;      /* centers horizontally */
-    height: calc(70vh - 60px);
+    height: calc(100vh - 60px);
     text-align: center;
 }
     
