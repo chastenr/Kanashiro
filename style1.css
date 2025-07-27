@@ -127,7 +127,7 @@ text-align: center;
   }
 }
 .navbar {
-  background-color: #e5e3e3; /* White background for the navbar */
+  background-color: linear-gradient(135deg, #1a1a1a, #111);/* White background for the navbar */
   padding: 10px 20px; /* Add padding to the navbar */
   min-height: 100px;
   width: 100%;
