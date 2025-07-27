@@ -101,14 +101,8 @@ text-align: center;
   margin-right: 10px;
   border-radius: 100px; /* Rounded corners for the image */
 }
-.navname {
-  font-size: 20px;
-  color:black; 
-  display: flex;
-  text-align: justify;
-  font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
 
-}
+
 .navname {
   font-size: 20px; /* Default font size for larger screens */
   margin: 0;
@@ -424,22 +418,30 @@ transition: transform 0.3s ease, filter 0.3s ease;
 .boxgrid {
   display: flex;
   align-items:  center;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   justify-content: center;
   margin: 0 auto;
   background-color: #1a1a1a;
-  height: 200px;
-  width: 1500px;
+  height: 250px;
+  flex-wrap: wrap;
+  width: 65%;
+  gap: 50px;
   border-radius: 40px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border: 2px solid #444;
+  position: relative; /* important for tooltip positioning */
+  overflow: visible; 
+  z-index: 1;
 }
 .size {
-  justify-content: center;
   display: flex;
-  height: 100px;
-  width: 220px;
-  gap: 100px;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+transition: transform 0.3s ease, filter 0.3s ease;
 }
 .iconss:hover {
  transform: scale(1.5);
@@ -447,6 +449,10 @@ filter: drop-shadow(0 0 5px #E34F26); /* HTML orange glow */
 }
 
 .iconss {
+  flex-wrap: wrap;
+  max-width: 100px;
+  width: 15vw; /* responsive width */
+  height: auto;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 .title-s {
@@ -459,4 +465,33 @@ filter: drop-shadow(0 0 5px #E34F26); /* HTML orange glow */
   justify-content: center;
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   
+}
+.icon-container {
+  position: relative; /* needed for tooltip positioning */
+  display: inline-block;
+  
+}
+.tooltip {
+  visibility: visible;
+  opacity: 1;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #181818;
+  color: #ffffff;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-size: 2.5rem;
+  font-weight: 700; /* ⬅️ Bold */
+  font-family: 'Poppins', sans-serif;
+  white-space: nowrap;
+  z-index: 10;
+  transition: opacity 0.3s ease;
+}
+
+  
+.icon-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
 }
