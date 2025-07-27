@@ -15,16 +15,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
         <div class="container1">
             <img class="navimage" src="IMAGE/IMG1.png" alt="Logo">
             <div class="brand-container">
            
             </div>
             <div class="container2">
-                <a class="home" href="index.html">HOME</a>
-                <a class="about" id="about" href="#">ABOUT</a>
-                <a class="projects" id="projects" href="#">SKILLS</a>
+                <a class="home" href="index.html ">HOME</a>
+                <a class="about" id="about" style="cursor: pointer;">ABOUT</a>
+                <a class="projects" id="projects" style="cursor: pointer;">SKILLS</a>
             </div>
         </div>
     </nav>
@@ -105,5 +105,12 @@
     <!-- Scripts -->
     <script src="index.js"></script>
     <script src="type.js"></script>
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+          const scrollY = window.scrollY;
+          navbar.style.transform = `translateY(${scrollY}px)`;
+        });
+      </script> 
 </body>
 </html>

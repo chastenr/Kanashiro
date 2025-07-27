@@ -127,15 +127,16 @@ text-align: center;
   }
 }
 .navbar {
-  background-color: linear-gradient(135deg, #1a1a1a, #111);/* White background for the navbar */
-  padding: 10px 20px; /* Add padding to the navbar */
-  min-height: 100px;
+  position: fixed;            /* Stays on top while scrolling */
+  top: 0;
+  left: 0;
   width: 100%;
-  box-sizing: border-box;
-  margin: 2;
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Align items vertically */
+  z-index: 9999;              /* Stays above all other elements */
+  background-color: white;    /* Or your preferred color */
+  padding: 10px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
 }
+
 .container1 {
   display: flex;
   align-items: center;
@@ -195,7 +196,7 @@ text-align: center;
   align-items: center;      /* centers horizontally */
   height: calc(100vh - 60px);
   text-align: center;
-}
+  padding-top: 120px;}
   
 .navside {
   width: 100px;
@@ -395,7 +396,7 @@ transition: transform 0.3s ease, filter 0.3s ease;
   margin: auto;
 }
 
-.home:hover, .about:hover, .project:hover {
+.home:hover, .about:hover, .projects:hover {
   transform: scale(1.2);
   filter: drop-shadow(0 0 5px #0A66C2);
   transition: transform 0.3s ease, filter 0.3s ease;
