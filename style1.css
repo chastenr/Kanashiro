@@ -439,4 +439,24 @@ transition: transform 0.3s ease, filter 0.3s ease;
   height: 100px;
   width: 220px;
   gap: 100px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.iconss:hover {
+ transform: scale(1.5);
+filter: drop-shadow(0 0 5px #E34F26); /* HTML orange glow */
+}
+
+.iconss {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.title-s {
+  font-size: 1.5rem;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  
 }
