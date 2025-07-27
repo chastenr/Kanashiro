@@ -1,17 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const button = document.getElementById("about");
-    const aboutSection = document.getElementById("aboutmain");
-    const projectsButton = document.getElementById("projects");
-    const projectsSection = document.getElementById("technical");
+  const buttonIds = ["home", "about", "skills", "projects"]; //buttons sa navbar
+  const sectionsIds = ["base", "aboutmain", "skillssector", "projectsmain"]; // section sa mapupunta
 
+  for (let i = 0; i < buttonIds.length; i++) {
+    const button = document.getElementById(buttonIds[i]);
+    const section = document.getElementById(sectionsIds[i]);
 
-    button.addEventListener("click", function () {
-
-        aboutSection.scrollIntoView({ behavior: "smooth", });
-
-    });
-
-    projectsButton.addEventListener("click", function () {
-      projectsSection.scrollIntoView({ behavior: "smooth", });
-    })});
-
+    button.addEventListener("click", function() {
+      section.scrollIntoView({ behavior: "smooth"})
+    })
+  }
+});
