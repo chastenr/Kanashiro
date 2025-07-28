@@ -11,3 +11,21 @@ document.addEventListener("DOMContentLoaded", function () {
     })
   }
 });
+
+const slides = document.querySelectorAll('.slide');
+let currentIndex = 0;
+
+document.querySelector('.next').addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  updateSlider();
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  updateSlider();
+});
+
+function updateSlider() {
+  const slider = document.querySelector('.slider');
+  slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
