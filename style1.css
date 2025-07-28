@@ -458,7 +458,7 @@ filter: drop-shadow(0 0 5px #E34F26); /* HTML orange glow */
   overflow: hidden;
   background: #402a2a;
   border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 20px rgba(180, 159, 159, 0.2);
 }
 
 .slider {
